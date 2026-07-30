@@ -13,10 +13,6 @@
     --brand-crimson:#8B1E1E;
     --brand-parchment:#F7F3EC;
 
-    --bg-lavender:#E6E1F2;
-    --bg-cream:#F5EFDC;
-    --bg-blush:#F0DEDC;
-
     --bg: var(--brand-parchment);
     --figure: var(--brand-purple);
     --sign-bg: var(--brand-crimson);
@@ -160,17 +156,15 @@
       'brand-tan':'#9C8E85',
       'brand-gold':'#C9A227',
       'brand-crimson':'#8B1E1E',
-      'brand-parchment':'#F7F3EC'
+      'brand-parchment':'#F7F3EC',
+      'black':'#000000'
     };
 
-    // Full-saturation brand colors read as noisy across a whole page, so the
-    // background picker offers softened, page-friendly tints instead.
     var BACKGROUND = {
       'parchment':'#F7F3EC',
       'tan':'#9C8E85',
-      'lavender':'#E6E1F2',
-      'cream':'#F5EFDC',
-      'blush':'#F0DEDC'
+      'black':'#000000',
+      'brand-purple':'#584A99'
     };
 
     // The sign stays bold, so each background gets a pre-paired text/border
@@ -180,7 +174,8 @@
       '#9C8E85': { text:'#F7F3EC', border:'#8B1E1E' },
       '#C9A227': { text:'#8B1E1E', border:'#584A99' },
       '#8B1E1E': { text:'#F7F3EC', border:'#C9A227' },
-      '#F7F3EC': { text:'#8B1E1E', border:'#C9A227' }
+      '#F7F3EC': { text:'#8B1E1E', border:'#C9A227' },
+      '#000000': { text:'#F7F3EC', border:'#C9A227' }
     };
 
     document.querySelectorAll('.swatches').forEach(function(group){
